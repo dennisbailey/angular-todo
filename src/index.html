@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='allTheGreatTodos'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Todo App</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div class="container" ng-controller="todoController">
+      <div class="row" style="padding-bottom: 1.5em;"> <!-- Start of Row 0s -->
+        <div class="col-md-12">
+          <h1 class="center">Angular Todo App</h1>
+        </div>
+      </div> <!-- End of Row 0 -->
+      
+      <div class="row center"> <!-- Start of Row 1 -->
+        <button type="button" 
+                class="btn btn-primary btn-lg"
+                >New Task
+        </button>
+        <button type="button" 
+                class="btn btn-secondary btn-lg"
+                >Incomplete Tasks</button>
+        <button type="button" 
+                class="btn btn-secondary btn-lg"
+                >Completed Tasks</button>
+        <hr>
+      </div> <!-- End of Row 1 -->
+    
+    </div><!-- End of container and todoController-->
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
