@@ -8,7 +8,8 @@
   </head>
   <body>
     <div class="container" ng-controller="todoController">
-      <div class="row" style="padding-bottom: 1.5em;"> <!-- Start of Row 0s -->
+      
+      <div class="row" style="padding-bottom: 1.5em;"> <!-- Start of Row 0 -->
         <div class="col-md-12">
           <h1 class="center">Angular Todo App</h1>
         </div>
@@ -20,14 +21,26 @@
                 >New Task
         </button>
         <button type="button" 
-                class="btn btn-secondary btn-lg"
+                class="btn btn-primary btn-lg"
                 >Incomplete Tasks</button>
         <button type="button" 
-                class="btn btn-secondary btn-lg"
+                class="btn btn-primary btn-lg"
                 >Completed Tasks</button>
         <hr>
       </div> <!-- End of Row 1 -->
-    
+      
+      <div class="row">
+        <h1>Add a Task</h1>
+      </div>
+      
+      <div class="row">
+        <h1>Todos</h1>
+      </div>
+      
+      <div class="row">
+        <h1>Completed Tasks</h1>
+      </div>
+      
     </div><!-- End of container and todoController-->
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
