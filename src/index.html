@@ -33,7 +33,15 @@
       </div> <!-- End of Row 1 -->
       
       <div class="row" ng-show="show === 'new'">
-        <h1>Add a Task</h1>
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="center">Add a Task</h1>
+          <hr>
+          <form>
+            <label class="col-md-2 control-label" for="task">New Task:</label>
+            <input class="col-md-6" type="text" name="task" ng-model="todo.task">
+            <button class="col-md-2 col-md-offset-1" ng-click="addTodo(todo)">Add Todo</button>
+          </form>
+        </div>
       </div>
       
       <div class="row" ng-show="show === 'incomplete'">
@@ -55,7 +63,7 @@
               <label class="checkbox">
                 <input type="checkbox" ng-model="todo.done" style="width: 30px; height: 30px;">
               </label>
-              <h2>{{ todo.task }}</h2>
+              <h2 ng-class="{strikeThrough: todo.done == true }">{{ todo.task }}</h2>
             </span>
         </div>
       </div>

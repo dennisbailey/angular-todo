@@ -1,3 +1,7 @@
 .center {
   text-align: center;
 }
+
+.strikeThrough {
+  text-decoration: line-through;
+}
