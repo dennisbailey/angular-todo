@@ -18,26 +18,29 @@
       <div class="row center"> <!-- Start of Row 1 -->
         <button type="button" 
                 class="btn btn-primary btn-lg"
+                ng-click="show = 'new'"
                 >New Task
         </button>
         <button type="button" 
                 class="btn btn-primary btn-lg"
+                ng-click="show = 'incomplete'"
                 >Incomplete Tasks</button>
         <button type="button" 
                 class="btn btn-primary btn-lg"
+                ng-click="show = 'complete'"
                 >Completed Tasks</button>
         <hr>
       </div> <!-- End of Row 1 -->
       
-      <div class="row">
+      <div class="row" ng-show="show === 'new'">
         <h1>Add a Task</h1>
       </div>
       
-      <div class="row">
+      <div class="row" ng-show="show === 'incomplete'">
         <h1>Todos</h1>
       </div>
       
-      <div class="row">
+      <div class="row" ng-show="show === 'complete'">
         <h1>Completed Tasks</h1>
       </div>
       
