@@ -38,10 +38,26 @@
       
       <div class="row" ng-show="show === 'incomplete'">
         <h1>Todos</h1>
+        <div class="col-md-6 col-md-offset-3">
+            <span ng-repeat="todo in list" ng-hide="todo.done">
+              <label class="checkbox">
+                <input type="checkbox" ng-model="todo.done" style="width: 30px; height: 30px;">
+              </label>
+              <h2>{{ todo.task }}</h2>
+            </span>
+        </div>
       </div>
       
       <div class="row" ng-show="show === 'complete'">
         <h1>Completed Tasks</h1>
+        <div class="col-md-6 col-md-offset-3">
+            <span ng-repeat="todo in list" ng-show="todo.done">
+              <label class="checkbox">
+                <input type="checkbox" ng-model="todo.done" style="width: 30px; height: 30px;">
+              </label>
+              <h2>{{ todo.task }}</h2>
+            </span>
+        </div>
       </div>
       
     </div><!-- End of container and todoController-->

@@ -3,5 +3,5 @@
 var app = angular.module('allTheGreatTodos', []);
 
 app.controller('todoController', ['$scope', function($scope) {
-  $scope.greeting = "Hello World!";
+  $scope.list = [{ task: 'Get this app working', done: false}];
 }]);
