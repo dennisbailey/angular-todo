@@ -8,6 +8,7 @@ app.controller('todoController', ['$scope', function($scope) {
     todo.done = false;
     $scope.list.push(todo);
     
+    $scope.show = 'incomplete';
     $scope.todo = {};
   }
   
